@@ -1,0 +1,846 @@
+{
+  "model_name": "distilgpt2",
+  "kind": "clm",
+  "rank_source": "winobias",
+  "k_values": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    10,
+    15,
+    20
+  ],
+  "utility_datasets": [
+    "wikitext2"
+  ],
+  "seed": 0,
+  "results": [
+    {
+      "method": "Baseline",
+      "k": 0,
+      "winobias_gap": 14.649005141008862,
+      "winobias_gap_ci": [
+        14.047125454748238,
+        15.283431241913343
+      ],
+      "stereoset_ss": 61.870845204178536,
+      "stereoset_ss_ci": [
+        59.75664767331434,
+        64.17735042735042
+      ],
+      "utility_ppl": 126.23046928163683,
+      "utility_ci": [
+        122.62047013625825,
+        129.49609938781686
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 126.23046928163683,
+      "utility_wikitext2_ci": [
+        122.62047013625825,
+        129.49609938781686
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.327710723876953,
+      "latency_p50_ms": 8.390655994415283,
+      "latency_p95_ms": 8.456192016601562,
+      "latency_std_ms": 0.2587398178198545,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 1,
+      "winobias_gap": 10.31931817301162,
+      "winobias_gap_ci": [
+        9.844918688227525,
+        10.79507968852659
+      ],
+      "stereoset_ss": 62.155745489078825,
+      "stereoset_ss_ci": [
+        60.066476733143396,
+        64.48243114909782
+      ],
+      "utility_ppl": 127.19442054291841,
+      "utility_ci": [
+        123.54676288751308,
+        130.4917403072932
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 127.19442054291841,
+      "utility_wikitext2_ci": [
+        123.54676288751308,
+        130.4917403072932
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.29588095664978,
+      "latency_p50_ms": 8.354799747467041,
+      "latency_p95_ms": 8.416288089752197,
+      "latency_std_ms": 0.16701140893913177,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 2,
+      "winobias_gap": 9.952425107449223,
+      "winobias_gap_ci": [
+        9.470193055450526,
+        10.415974834477465
+      ],
+      "stereoset_ss": 62.7730294396961,
+      "stereoset_ss_ci": [
+        60.70394112060779,
+        64.95963912630579
+      ],
+      "utility_ppl": 126.84880327141057,
+      "utility_ci": [
+        123.30995594805312,
+        130.10877207481374
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 126.84880327141057,
+      "utility_wikitext2_ci": [
+        123.30995594805312,
+        130.10877207481374
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.352348833084106,
+      "latency_p50_ms": 8.357888221740723,
+      "latency_p95_ms": 8.43258876800537,
+      "latency_std_ms": 0.10988963455632915,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 3,
+      "winobias_gap": 10.039955881480944,
+      "winobias_gap_ci": [
+        9.579088155270664,
+        10.536642280648598
+      ],
+      "stereoset_ss": 62.44064577397911,
+      "stereoset_ss_ci": [
+        60.32644824311491,
+        64.69729344729345
+      ],
+      "utility_ppl": 128.6912241083694,
+      "utility_ci": [
+        125.10272649233538,
+        131.99337349385954
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 128.6912241083694,
+      "utility_wikitext2_ci": [
+        125.10272649233538,
+        131.99337349385954
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.307923221588135,
+      "latency_p50_ms": 8.288256168365479,
+      "latency_p95_ms": 8.374015760421752,
+      "latency_std_ms": 0.058045255400210834,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 5,
+      "winobias_gap": 8.883666598369059,
+      "winobias_gap_ci": [
+        8.463878665395189,
+        9.361669969127705
+      ],
+      "stereoset_ss": 62.67806267806268,
+      "stereoset_ss_ci": [
+        60.65883190883191,
+        64.98219373219372
+      ],
+      "utility_ppl": 114.32857912125013,
+      "utility_ci": [
+        111.4821683210635,
+        116.89957896470635
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 114.32857912125013,
+      "utility_wikitext2_ci": [
+        111.4821683210635,
+        116.89957896470635
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.262590732574463,
+      "latency_p50_ms": 8.265215873718262,
+      "latency_p95_ms": 8.364772701263428,
+      "latency_std_ms": 0.09252558997554194,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 8,
+      "winobias_gap": 8.701950176693417,
+      "winobias_gap_ci": [
+        8.306628536163332,
+        9.160082940481693
+      ],
+      "stereoset_ss": 63.05792972459639,
+      "stereoset_ss_ci": [
+        60.848765432098766,
+        65.4320987654321
+      ],
+      "utility_ppl": 112.25670937664562,
+      "utility_ci": [
+        109.51173609133745,
+        114.74263017354887
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 112.25670937664562,
+      "utility_wikitext2_ci": [
+        109.51173609133745,
+        114.74263017354887
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.235479068756103,
+      "latency_p50_ms": 8.23142385482788,
+      "latency_p95_ms": 8.285140705108642,
+      "latency_std_ms": 0.032108859850800676,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 10,
+      "winobias_gap": 9.870950913046563,
+      "winobias_gap_ci": [
+        9.441467436615325,
+        10.379243342989662
+      ],
+      "stereoset_ss": 63.58024691358025,
+      "stereoset_ss_ci": [
+        61.46604938271605,
+        65.8119658119658
+      ],
+      "utility_ppl": 113.4063655002734,
+      "utility_ci": [
+        110.73000359724766,
+        115.87352124760773
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 113.4063655002734,
+      "utility_wikitext2_ci": [
+        110.73000359724766,
+        115.87352124760773
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.223459815979004,
+      "latency_p50_ms": 8.217087745666504,
+      "latency_p95_ms": 8.292457675933838,
+      "latency_std_ms": 0.03575350238094043,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 15,
+      "winobias_gap": 6.0827440359203555,
+      "winobias_gap_ci": [
+        5.760085541909052,
+        6.433025212940876
+      ],
+      "stereoset_ss": 63.295346628679965,
+      "stereoset_ss_ci": [
+        61.20607787274454,
+        65.57692307692308
+      ],
+      "utility_ppl": 121.63516971230416,
+      "utility_ci": [
+        118.86121993108311,
+        124.25898059539608
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 121.63516971230416,
+      "utility_wikitext2_ci": [
+        118.86121993108311,
+        124.25898059539608
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.225093727111817,
+      "latency_p50_ms": 8.2226881980896,
+      "latency_p95_ms": 8.283801603317261,
+      "latency_std_ms": 0.029313634369180375,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Gradient",
+      "k": 20,
+      "winobias_gap": 4.489081124665054,
+      "winobias_gap_ci": [
+        4.242232738764165,
+        4.745887984629744
+      ],
+      "stereoset_ss": 62.91547958214625,
+      "stereoset_ss_ci": [
+        60.68376068376068,
+        65.07716049382715
+      ],
+      "utility_ppl": 311.88092831150647,
+      "utility_ci": [
+        304.71265299212274,
+        318.6850989714415
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 311.88092831150647,
+      "utility_wikitext2_ci": [
+        304.71265299212274,
+        318.6850989714415
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.28305793762207,
+      "latency_p50_ms": 8.28268814086914,
+      "latency_p95_ms": 8.341606521606446,
+      "latency_std_ms": 0.035697920041381594,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 1,
+      "winobias_gap": 10.31931817301162,
+      "winobias_gap_ci": [
+        9.844918688227525,
+        10.79507968852659
+      ],
+      "stereoset_ss": 62.155745489078825,
+      "stereoset_ss_ci": [
+        60.066476733143396,
+        64.48243114909782
+      ],
+      "utility_ppl": 127.19442054291841,
+      "utility_ci": [
+        123.54676288751308,
+        130.4917403072932
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 127.19442054291841,
+      "utility_wikitext2_ci": [
+        123.54676288751308,
+        130.4917403072932
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.334967107772828,
+      "latency_p50_ms": 8.336895942687988,
+      "latency_p95_ms": 8.414179229736328,
+      "latency_std_ms": 0.08839949776043272,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 2,
+      "winobias_gap": 10.38207685006958,
+      "winobias_gap_ci": [
+        9.929491970650002,
+        10.8696767582081
+      ],
+      "stereoset_ss": 61.680911680911684,
+      "stereoset_ss_ci": [
+        59.636752136752136,
+        64.08000949667615
+      ],
+      "utility_ppl": 128.90725473890026,
+      "utility_ci": [
+        125.24148298828109,
+        132.2806009998134
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 128.90725473890026,
+      "utility_wikitext2_ci": [
+        125.24148298828109,
+        132.2806009998134
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.319289617538452,
+      "latency_p50_ms": 8.324239730834961,
+      "latency_p95_ms": 8.390873384475707,
+      "latency_std_ms": 0.0780628594438389,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 3,
+      "winobias_gap": 10.039955881480944,
+      "winobias_gap_ci": [
+        9.579088155270664,
+        10.536642280648598
+      ],
+      "stereoset_ss": 62.44064577397911,
+      "stereoset_ss_ci": [
+        60.32644824311491,
+        64.69729344729345
+      ],
+      "utility_ppl": 128.6912241083694,
+      "utility_ci": [
+        125.10272649233538,
+        131.99337349385954
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 128.6912241083694,
+      "utility_wikitext2_ci": [
+        125.10272649233538,
+        131.99337349385954
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.320196447372437,
+      "latency_p50_ms": 8.31603193283081,
+      "latency_p95_ms": 8.387252855300904,
+      "latency_std_ms": 0.061856931322799215,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 5,
+      "winobias_gap": 8.883666598369059,
+      "winobias_gap_ci": [
+        8.463878665395189,
+        9.361669969127705
+      ],
+      "stereoset_ss": 62.67806267806268,
+      "stereoset_ss_ci": [
+        60.65883190883191,
+        64.98219373219372
+      ],
+      "utility_ppl": 114.32857912125013,
+      "utility_ci": [
+        111.4821683210635,
+        116.89957896470635
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 114.32857912125013,
+      "utility_wikitext2_ci": [
+        111.4821683210635,
+        116.89957896470635
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.276341218948364,
+      "latency_p50_ms": 8.282383918762207,
+      "latency_p95_ms": 8.352168130874634,
+      "latency_std_ms": 0.08501028760358642,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 8,
+      "winobias_gap": 8.701950176693417,
+      "winobias_gap_ci": [
+        8.306628536163332,
+        9.160082940481693
+      ],
+      "stereoset_ss": 63.05792972459639,
+      "stereoset_ss_ci": [
+        60.848765432098766,
+        65.4320987654321
+      ],
+      "utility_ppl": 112.25670937664562,
+      "utility_ci": [
+        109.51173609133745,
+        114.74263017354887
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 112.25670937664562,
+      "utility_wikitext2_ci": [
+        109.51173609133745,
+        114.74263017354887
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.28304838180542,
+      "latency_p50_ms": 8.268799781799316,
+      "latency_p95_ms": 8.395851182937623,
+      "latency_std_ms": 0.055724365997940326,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 10,
+      "winobias_gap": 9.24643388114205,
+      "winobias_gap_ci": [
+        8.831237645267446,
+        9.71187915045261
+      ],
+      "stereoset_ss": 63.39031339031339,
+      "stereoset_ss_ci": [
+        61.22625830959164,
+        65.57454890788225
+      ],
+      "utility_ppl": 114.26856368510308,
+      "utility_ci": [
+        111.49859618050448,
+        116.7982445249077
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 114.26856368510308,
+      "utility_wikitext2_ci": [
+        111.49859618050448,
+        116.7982445249077
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.157781114578247,
+      "latency_p50_ms": 8.237567901611328,
+      "latency_p95_ms": 8.304430103302002,
+      "latency_std_ms": 0.26073247654853104,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 15,
+      "winobias_gap": 6.13947474704067,
+      "winobias_gap_ci": [
+        5.808146510801765,
+        6.46811282386415
+      ],
+      "stereoset_ss": 63.53276353276353,
+      "stereoset_ss_ci": [
+        61.32359924026591,
+        65.8119658119658
+      ],
+      "utility_ppl": 124.64745111183545,
+      "utility_ci": [
+        121.73810403589977,
+        127.36072940138617
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 124.64745111183545,
+      "utility_wikitext2_ci": [
+        121.73810403589977,
+        127.36072940138617
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.199751663208009,
+      "latency_p50_ms": 8.249663829803467,
+      "latency_p95_ms": 8.296754932403564,
+      "latency_std_ms": 0.210748036951663,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "Curvature",
+      "k": 20,
+      "winobias_gap": 4.182439027377226,
+      "winobias_gap_ci": [
+        3.9558788399050675,
+        4.409357642075629
+      ],
+      "stereoset_ss": 62.48812915479582,
+      "stereoset_ss_ci": [
+        60.256410256410255,
+        64.71984805318138
+      ],
+      "utility_ppl": 250.00335504283635,
+      "utility_ci": [
+        243.93623363991648,
+        255.20567979251203
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 250.00335504283635,
+      "utility_wikitext2_ci": [
+        243.93623363991648,
+        255.20567979251203
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.294225902557374,
+      "latency_p50_ms": 8.285696029663086,
+      "latency_p95_ms": 8.35281949043274,
+      "latency_std_ms": 0.03779680300547192,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 1,
+      "winobias_gap": 10.171112411276594,
+      "winobias_gap_ci": [
+        9.66518439961433,
+        10.662921977534333
+      ],
+      "stereoset_ss": 61.965811965811966,
+      "stereoset_ss_ci": [
+        59.804131054131055,
+        64.31742640075973
+      ],
+      "utility_ppl": 126.83291495572789,
+      "utility_ci": [
+        123.20669620182724,
+        130.13358222792152
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 126.83291495572789,
+      "utility_wikitext2_ci": [
+        123.20669620182724,
+        130.13358222792152
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.419804077148438,
+      "latency_p50_ms": 8.423935890197754,
+      "latency_p95_ms": 8.4946928024292,
+      "latency_std_ms": 0.060978457173596345,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 2,
+      "winobias_gap": 10.595956724472156,
+      "winobias_gap_ci": [
+        10.079218030568994,
+        11.099404056327385
+      ],
+      "stereoset_ss": 61.965811965811966,
+      "stereoset_ss_ci": [
+        59.92402659069326,
+        64.38983855650523
+      ],
+      "utility_ppl": 127.26276531657375,
+      "utility_ci": [
+        123.62449079296896,
+        130.60385672430263
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 127.26276531657375,
+      "utility_wikitext2_ci": [
+        123.62449079296896,
+        130.60385672430263
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.410490856170654,
+      "latency_p50_ms": 8.442815780639648,
+      "latency_p95_ms": 8.530380773544312,
+      "latency_std_ms": 0.12795471970728975,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 3,
+      "winobias_gap": 10.459951018264054,
+      "winobias_gap_ci": [
+        9.97399745974786,
+        10.951352777428763
+      ],
+      "stereoset_ss": 61.680911680911684,
+      "stereoset_ss_ci": [
+        59.56671415004748,
+        64.0099715099715
+      ],
+      "utility_ppl": 126.7574268528401,
+      "utility_ci": [
+        123.16086146330989,
+        130.1008057205081
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 126.7574268528401,
+      "utility_wikitext2_ci": [
+        123.16086146330989,
+        130.1008057205081
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.469223575592041,
+      "latency_p50_ms": 8.46124792098999,
+      "latency_p95_ms": 8.52889633178711,
+      "latency_std_ms": 0.027923548760706452,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 5,
+      "winobias_gap": 10.174603494755102,
+      "winobias_gap_ci": [
+        9.688642777327004,
+        10.66088915039484
+      ],
+      "stereoset_ss": 61.53846153846154,
+      "stereoset_ss_ci": [
+        59.44919278252612,
+        63.81766381766382
+      ],
+      "utility_ppl": 127.4812252351803,
+      "utility_ci": [
+        123.89109166156268,
+        130.86264921915645
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 127.4812252351803,
+      "utility_wikitext2_ci": [
+        123.89109166156268,
+        130.86264921915645
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.575593547821045,
+      "latency_p50_ms": 8.573999881744385,
+      "latency_p95_ms": 8.630868577957154,
+      "latency_std_ms": 0.03485855893743054,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 8,
+      "winobias_gap": 10.126956096744472,
+      "winobias_gap_ci": [
+        9.655233430265913,
+        10.623465957795398
+      ],
+      "stereoset_ss": 61.53846153846154,
+      "stereoset_ss_ci": [
+        59.306742640075974,
+        63.81766381766382
+      ],
+      "utility_ppl": 128.40772243785807,
+      "utility_ci": [
+        124.79539747331717,
+        131.8405395938508
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 128.40772243785807,
+      "utility_wikitext2_ci": [
+        124.79539747331717,
+        131.8405395938508
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.679019527435303,
+      "latency_p50_ms": 8.708096027374268,
+      "latency_p95_ms": 8.743014192581176,
+      "latency_std_ms": 0.057425088410252845,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 10,
+      "winobias_gap": 10.577699793041326,
+      "winobias_gap_ci": [
+        10.089608942850584,
+        11.10027756736787
+      ],
+      "stereoset_ss": 61.72839506172839,
+      "stereoset_ss_ci": [
+        59.636752136752136,
+        64.03490028490027
+      ],
+      "utility_ppl": 129.04799344659935,
+      "utility_ci": [
+        125.41595087982478,
+        132.51449835019605
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 129.04799344659935,
+      "utility_wikitext2_ci": [
+        125.41595087982478,
+        132.51449835019605
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.715539798736572,
+      "latency_p50_ms": 8.732160091400146,
+      "latency_p95_ms": 8.845313692092896,
+      "latency_std_ms": 0.13679529828052614,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 15,
+      "winobias_gap": 7.624804291161108,
+      "winobias_gap_ci": [
+        7.181250039529475,
+        8.081430831963832
+      ],
+      "stereoset_ss": 61.72839506172839,
+      "stereoset_ss_ci": [
+        59.7340930674264,
+        64.05508072174739
+      ],
+      "utility_ppl": 132.73711746969667,
+      "utility_ci": [
+        129.04048128585387,
+        136.2698844640091
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 132.73711746969667,
+      "utility_wikitext2_ci": [
+        129.04048128585387,
+        136.2698844640091
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 8.955395240783691,
+      "latency_p50_ms": 8.945008277893066,
+      "latency_p95_ms": 9.0370463848114,
+      "latency_std_ms": 0.054286378663019524,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    },
+    {
+      "method": "FairEtell",
+      "k": 20,
+      "winobias_gap": 6.950855786010035,
+      "winobias_gap_ci": [
+        6.531045957410542,
+        7.3849505908559205
+      ],
+      "stereoset_ss": 62.630579297245966,
+      "stereoset_ss_ci": [
+        60.51638176638177,
+        64.79226020892686
+      ],
+      "utility_ppl": 135.28584796842725,
+      "utility_ci": [
+        131.4935735254678,
+        138.99790390132702
+      ],
+      "utility_metric": "wikitext2_ppl",
+      "utility_wikitext2_ppl": 135.28584796842725,
+      "utility_wikitext2_ci": [
+        131.4935735254678,
+        138.99790390132702
+      ],
+      "utility_wikitext2_metric": "wikitext2_ppl",
+      "latency_mean_ms": 9.269884128570556,
+      "latency_p50_ms": 9.271295547485352,
+      "latency_p95_ms": 9.349683475494384,
+      "latency_std_ms": 0.054131736853512046,
+      "latency_iters": 50,
+      "latency_batch_size": 8,
+      "latency_seq_len": 128
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "model_name": "distilbert-base-uncased",
+      "kind": "mlm",
+      "wb_gap_baseline": 10.780708374249768,
+      "ss_baseline": 56.31528964862298,
+      "utility_baseline": 13.546878570900963,
+      "wb_overlap_GvC": 20,
+      "wb_overlap_GvF": 20,
+      "wb_overlap_CvF": 20,
+      "stability_top20_Gradient": 12,
+      "stability_top20_Curvature": 11,
+      "stability_top20_FairEtell": 11
+    },
+    {
+      "model_name": "bert-base-uncased",
+      "kind": "mlm",
+      "wb_gap_baseline": 45.97237763329303,
+      "ss_baseline": 54.74833808167141,
+      "utility_baseline": 12.286954977184605,
+      "wb_overlap_GvC": 15,
+      "wb_overlap_GvF": 19,
+      "wb_overlap_CvF": 16,
+      "stability_top20_Gradient": 7,
+      "stability_top20_Curvature": 10,
+      "stability_top20_FairEtell": 7
+    },
+    {
+      "model_name": "distilgpt2",
+      "kind": "clm",
+      "wb_gap_baseline": 14.649005141008862,
+      "ss_baseline": 61.870845204178536,
+      "utility_baseline": 126.23046928163683,
+      "wb_overlap_GvC": 19,
+      "wb_overlap_GvF": 20,
+      "wb_overlap_CvF": 19,
+      "stability_top20_Gradient": 12,
+      "stability_top20_Curvature": 12,
+      "stability_top20_FairEtell": 12
+    },
+    {
+      "model_name": "gpt2",
+      "kind": "clm",
+      "wb_gap_baseline": 15.338771348416975,
+      "ss_baseline": 60.161443494776826,
+      "utility_baseline": 71.34844649437984,
+      "wb_overlap_GvC": 20,
+      "wb_overlap_GvF": 20,
+      "wb_overlap_CvF": 20,
+      "stability_top20_Gradient": 14,
+      "stability_top20_Curvature": 13,
+      "stability_top20_FairEtell": 12
+    }
+  ]
+}

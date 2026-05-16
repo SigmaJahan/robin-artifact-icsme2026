@@ -1,0 +1,39 @@
+{
+  "outdir": "outputs",
+  "run_id": "full_seed1",
+  "device": "cuda",
+  "models": [
+    "distilbert-base-uncased",
+    "bert-base-uncased",
+    "distilgpt2",
+    "gpt2"
+  ],
+  "seed": 1,
+  "max_length": 128,
+  "max_pairs_winobias": 0,
+  "max_pairs_stereoset": 0,
+  "eval_max_pairs_winobias": 0,
+  "eval_max_pairs_stereoset": 0,
+  "utility_max_texts": 2000,
+  "utility_batch_size": 8,
+  "utility_datasets": [
+    "wikitext2"
+  ],
+  "k_values": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    10,
+    15,
+    20
+  ],
+  "winobias_types": [
+    "type_1",
+    "type_2"
+  ],
+  "util_curv_max_texts": 500,
+  "fairetell_n_dirs": 4,
+  "fairetell_dir_max_pairs": 400
+}

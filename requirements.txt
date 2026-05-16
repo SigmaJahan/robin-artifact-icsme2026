@@ -1,0 +1,15 @@
+# Core
+numpy
+pandas
+scipy
+tqdm
+matplotlib
+
+# Hugging Face
+transformers
+datasets
+accelerate
+
+# PyTorch
+# On Compute Canada, install torch via the Alliance wheelhouse (pip --no-index torch ...)
+# If you are on a machine with internet/pip wheels, you can also install torch via pip.

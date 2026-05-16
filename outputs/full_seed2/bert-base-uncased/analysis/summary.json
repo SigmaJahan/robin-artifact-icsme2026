@@ -1,0 +1,13 @@
+{
+  "model_name": "bert-base-uncased",
+  "kind": "mlm",
+  "wb_gap_baseline": 45.97237763329303,
+  "ss_baseline": 54.74833808167141,
+  "utility_baseline": 12.286954977184605,
+  "wb_overlap_GvC": 15,
+  "wb_overlap_GvF": 19,
+  "wb_overlap_CvF": 16,
+  "stability_top20_Gradient": 7,
+  "stability_top20_Curvature": 10,
+  "stability_top20_FairEtell": 7
+}

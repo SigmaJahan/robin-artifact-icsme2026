@@ -1,0 +1,13 @@
+{
+  "model_name": "distilgpt2",
+  "kind": "clm",
+  "wb_gap_baseline": 14.649005141008862,
+  "ss_baseline": 61.870845204178536,
+  "utility_baseline": 126.23046928163683,
+  "wb_overlap_GvC": 19,
+  "wb_overlap_GvF": 20,
+  "wb_overlap_CvF": 19,
+  "stability_top20_Gradient": 12,
+  "stability_top20_Curvature": 12,
+  "stability_top20_FairEtell": 12
+}

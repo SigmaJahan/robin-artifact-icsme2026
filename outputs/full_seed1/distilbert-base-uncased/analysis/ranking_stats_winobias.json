@@ -1,0 +1,13 @@
+{
+  "k": 20,
+  "overlap_topk": {
+    "Gradient_vs_Curvature": 20,
+    "Gradient_vs_FairEtell": 20,
+    "Curvature_vs_FairEtell": 20
+  },
+  "spearman": {
+    "Gradient_vs_Curvature": 0.9966557334876843,
+    "Gradient_vs_FairEtell": 0.9994533410508716,
+    "Curvature_vs_FairEtell": 0.9978776770210305
+  }
+}

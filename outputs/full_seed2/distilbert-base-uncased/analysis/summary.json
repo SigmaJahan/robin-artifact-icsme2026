@@ -1,0 +1,13 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "kind": "mlm",
+  "wb_gap_baseline": 10.780708374249768,
+  "ss_baseline": 56.31528964862298,
+  "utility_baseline": 13.546878570900963,
+  "wb_overlap_GvC": 20,
+  "wb_overlap_GvF": 20,
+  "wb_overlap_CvF": 20,
+  "stability_top20_Gradient": 12,
+  "stability_top20_Curvature": 11,
+  "stability_top20_FairEtell": 11
+}
